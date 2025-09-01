@@ -1,701 +1,180 @@
 <!DOCTYPE HTML>
 <!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Strata by HTML5 UP (html5up.net)
+  Adapted for Xinhao Dong | License: CCA 3.0 (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Diwen Xue</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-		<script>
-			function toggleBib(bibName) {
-			  var x = document.getElementById(bibName);
-			  if (x.style.display === "none") {
-				x.style.display = "block";
-			  } else {
-				x.style.display = "none";
-			  }
-			}
-			</script>
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+  <title>Xinhao Dong (Jack)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Xinhao Dong — third-year PhD candidate in Economics at Simon Fraser University. Research: monetary policy transmission, deposit-rate liberalization, bank competition, OLG demographics." />
+  <meta property="og:title" content="Xinhao Dong" />
+  <meta property="og:description" content="PhD candidate in Economics at Simon Fraser University. Monetary policy, liberalization, bank competition, OLG." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://XinhaoDong.github.io" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script>
+    function toggleBib(id) {
+      var el = document.getElementById(id);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/diwenxue.jpg" alt="" height="240" /></a>
-					<h1><strong>Diwen Xue</strong><br />
-					Graduate Student in Computer Science<br />
-					at <a href="https://umich.edu/">the University of Michigan</a></h1>
-				</div>
-			</header>
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
+      <!-- TODO: replace with your own headshot file, e.g., images/xinhao.jpg -->
+      <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Portrait of Xinhao Dong" height="240" /></a>
+      <h1>
+        <strong>Xinhao Dong (Jack)</strong><br/>
+        Third-year PhD Candidate in Economics<br/>
+        at <a href="https://www.sfu.ca/" target="_blank" rel="noopener">Simon Fraser University</a>
+      </h1>
+    </div>
+  </header>
 
-		<!-- Main -->
-			<div id="main">
+  <!-- Main -->
+  <div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me<br />
-						</header>
-						<p> I am a fifth year PhD candidate in Computer Science at the University of Michigan. My research focuses on areas where the privacy, security and availability implications of networked systems affect users in the real world. I conduct Internet measurements at scale, use those observations to refine threat models, and build countermeasures to safeguard users’ communication on this increasingly adversarial Internet. </p>
-						<p> Download my CV <a href="https://diwenx.com/assets/files/CV-DiwenXue-2025.pdf">Here</a> </p>
-						<p><b> I am in the academic job market!</b></p>
-						
-					</section>
+    <!-- About -->
+    <section id="one">
+      <header class="major"><h2>About</h2></header>
+      <p>
+        I am a third-year PhD candidate in Economics at Simon Fraser University. My research studies how
+        monetary policy is transmitted through banking, with a focus on China’s 2015 deposit rate liberalization
+        and the Reserve Requirement Ratio (RRR). I combine econometric evidence (difference-in-differences,
+        event studies, robust placebos) with structural models of deposit pricing and bank competition. I also
+        explore macro-demographic dynamics in overlapping-generations (OLG) frameworks linking fertility,
+        education, and pensions.
+      </p>
+      <!-- Optional: add a compiled CV PDF to assets/files and update the link below -->
+      <p>Download my CV <a href="assets/files/CV-XinhaoDong.pdf" target="_blank" rel="noopener">(PDF)</a>.</p>
+    </section>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Publications</h2>
+    <!-- Research -->
+    <section id="two">
+      <h2>Research</h2>
 
-						<div>
-							<p><h3 class="paper-titles"> [WPES ’25] 
-							 	<a href="https://diwenx.com/"> CryptoFilter: Privacy-Preserving Traffic Analysis of Weak Transport Layer Encryption at Internet Gateways</a>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('MixonBacaCS25')"><a class="goblue">Bib</a></button> </br>
-<div id="MixonBacaCS25" style="display:none">
+      <!-- Working Paper -->
+      <article class="work-item">
+        <h3>
+          Financial Liberalization and the Effectiveness of Reserve Policy: Evidence from China’s 2015 Deposit Rate Reform
+        </h3>
+        <p><b>Working paper (2025).</b> After the removal of the deposit-rate ceiling, bank deposit rates become more
+          responsive to RRR changes, while average deposit rates decline. I provide supporting bank-level 
+          difference-in-differences evidence and a structural deposit-pricing model with reserve requirements that
+          rationalizes both findings.</p>
+        <ul class="actions">
+          <li><a class="button" href="https://www.dropbox.com/scl/fi/fjdbz883in90jk95rsp57/Financial_Liberalization_and_the_Effectiveness_of_Reserve_Policy__Evidence_from_China_s_2015_Deposit_Rate_Reform-1.pdf?rlkey=bo2wyrqfcyh5mkb4o71il8bdc&dl=0" target="_blank" rel="noopener">PDF</a></li>
+          <li><button class="button alt" onclick="toggleBib('bib-rrr')">BibTeX</button></li>
+        </ul>
+        <div id="bib-rrr" style="display:none">
 <pre style="white-space: pre-wrap">
-@inproceedings{MixonBacaCS25,
-	author = {Benjamin Mixon-Baca and Diwen Xue and Roya Ensafi and Jedidiah R. Crandall},
-	title = {{CryptoFilter: Privacy-Preserving Traffic Analysis of Weak Transport Layer Encryption at Internet Gateways}},
-	booktitle = {{Workshop on Privacy in the Electronic Society (WPES)}},
-	year = {2025},
-	address = {Taipei, Taiwan}
-}
-
-</pre>	
-</h3>
-							<small style="font-size:12pt;">B. Mixon-Baca, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Ensafi and J. Crandall</small><br>
-							<b><i>In:</i></b> 24th Workshop on Privacy in the Electronic Society (WPES), 2025. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [CCS ’25] 
-							 	<a href="https://diwenx.com/assets/files/dmap.pdf"> Fingerprinting Deep Packet Inspection Devices by their Ambiguities</a>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2025DPI')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2025DPI" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Xue2025DPI,
-	author = {Diwen Xue and Armin Huremagic and Wayne Wang and Ram Sundara Raman and Roya Ensafi},
-	title = {{Fingerprinting Deep Packet Inspection Devices by their Ambiguities}},
-	booktitle = {ACM SIGSAC Conference on Computer and Communications Security (CCS)},
-	year = {2025},
-	address = {Taipei, Taiwan}
-}
-
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">A. Huremagic, W. Wang, R. Sundara Raman, and R. Ensafi</small></br>
-							<b><i>In:</i></b> ACM SIGSAC Conference on Computer and Communications Security (CCS) 2025. </br>
-							</p>
-						</div>
-
-
-						<div>
-							<p><h3 class="paper-titles"> [PETS ’25] 
-							 	<a href="https://diwenx.com/assets/files/cenpush-pets.pdf"> Blocking-Resistant Communication Using Push Notifications</a>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Kumar2025CenPush')"><a class="goblue">Bib</a></button> </br>
-<div id="Kumar2025CenPush" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Kumar2025CenPush,
-	author = {Piyush Kumar and Diwen Xue and Aaron Ortwein and Cecylia Bocovich and Harry and Roya Ensafi},
-	title = {{CenPush: Blocking-Resistant Communication Using Push Notifications}},
-	booktitle = {Proceedings on Privacy Enhancing Technologies (PETS 2025)},
-	year = {2025},
-	address = {Washington, DC, United States},
-	publisher = {Privacy Enhancing Technologies Symposium Advisory Board},
-}
-
-</pre>	
-</h3>
-							<small style="font-size:12pt;">P. Kumar, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">A. Ortwein, C. Bocovich, Harry, and R. Ensafi</small></br>
-							<b><i>In:</i></b> Privacy Enhancing Technologies 2025. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [NDSS ’25] 
-							 	<a href="https://diwenx.com/assets/files/timing-ndss.pdf"> The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic</a>
-								 <button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/timing-ndss-slides.pdf" target="_blank">Slides</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2025Timing')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2025Timing" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Xue2025Timing,
-	author = {Diwen Xue and Robert Stanley and Piyush Kumar and Roya Ensafi},
-	title = {{The Discriminative Power of Cross-layer RTTs in Fingerprinting Proxy Traffic}},
-	booktitle = {Network and Distributed System Security},
-	publisher = {The Internet Society},
-	year = {2025}
-}
-
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Stanley, P. Kumar, and R. Ensafi</small></br>
-							<b><i>In:</i></b> Network and Distributed System Security Symposium 2025. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [FOCI'25]
-								<a href="https://www.petsymposium.org/foci/2025/foci-2025-0001.pdf"> Is Custom Congestion Control a Bad Idea for Circumvention Tools?</a>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Wang2025Congestion')"><a class="goblue">Bib</a></button> </br>
-<div id="Wang2025Congestion" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Wang2025Congestion,
-	author = {Wanye Wang and Diwen Xue and Piyush Kumar and Ayush Mishra and Anonymous and Roya Ensafi},
-	title = {{Is Custom Congestion Control a Bad Idea for Circumvention Tools?}},
-	booktitle = {Free and Open Communications on the Internet},
-	year = {2025},
-	publisher = {Proceedings on Privacy Enhancing Technologies}
-}
-
-</pre>	
-</h3>
-							<small style="font-size:12pt;">W. Wang, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">, P. Kumar, A. Mishra, Anonymous, and R. Ensafi</small><br>
-							<b><i>In:</i></b> Free and Open Communications on the Internet 2025. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [USENIX'24]
-								<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/xue"> Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/tls-usenix24-slides.pdf" target="_blank">Slides</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2024TLSinTLS')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2024TLSinTLS" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings {Xue2024TLSinTLS,
-	author = {Diwen Xue and Michalis Kallitsis and Amir Houmansadr and Roya Ensafi},
-	title = {{Fingerprinting Obfuscated Proxy Traffic with Encapsulated TLS Handshakes}},
-	booktitle = {33st USENIX Security Symposium (USENIX Security 24)},
-	year = {2024},
-	address = {PHILADELPHIA, PA},
-	publisher = {USENIX Association},
-}
-
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">M. Kallitsis, A. Houmansadr, and R. Ensafi</small></br>
-							<b><i>In:</i></b> USENIX Security Symposium 2024. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [USENIX'24]
-								<a href="https://www.usenix.org/conference/usenixsecurity24/presentation/xue-bridging"> Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/bridgingbarriers.html" target="_blank">HTML</a></button>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/survey-usenix24-slides.pdf" target="_blank">Slides</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2024CircumventionSurvey')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2024CircumventionSurvey" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings {Xue2024CircumventionSurvey,
-	author = {Diwen Xue and Anna Ablove and Reethika Ramesh and Grace Kwak-Danciu and Roya Ensafi},
-	title = {{Bridging Barriers: A Survey of Challenges and Priorities in the Censorship Circumvention Landscape}},
-	booktitle = {33st USENIX Security Symposium (USENIX Security 24)},
-	year = {2024},
-	address = {PHILADELPHIA, PA},
-	publisher = {USENIX Association},
-}
-
-</pre>	
-</h3>
-							<u><b>Diwen Xue*</b></u>, <small style="font-size:12pt;">A. Ablove*, R. Ramesh, G. Kwak-Danciu and R. Ensafi</small></br>
-							<b><i>In:</i></b> USENIX Security Symposium 2024. </br>
-							</p>
-						</div>
-
-						<div>
-							<p><h3 class="paper-titles"> [PETS'24] 
-								<a href="https://diwenx.com/assets/files/vpn-conntrack-pets24.pdf"> Attacking Connection Tracking Frameworks as used by Virtual Private Networks</a>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('vpnpets2024')"><a class="goblue">Bib</a></button> </br>
-<div id="vpnpets2024" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings {MixonBaca2024,
-	author = {Benjamin Mixon-Baca and Jeffrey Knockel and Diwen Xue and Tarun Ayyagari and Deepak Kapur and Roya Ensafi and Jedidiah R. Crandall},
-	title = {{Attacking Connection Tracking Frameworks as used by Virtual Private Networks}},
-	booktitle = {Proceedings on Privacy Enhancing Technologies (PETS 2024)},
-	year = {2024},
-	address = {Bristol, United Kingdom},
-	publisher = {Privacy Enhancing Technologies Symposium Advisory Board},
-}
-
-</pre>	
-</h3>
-							<small style="font-size:12pt;">B. Mixon-Baca, J. Knockel, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">T. Ayyagari, D. Kapur, R. Ensafi and J. Crandall</small><br>
-							<b><i>In:</i></b> Privacy Enhancing Technologies 2024. </br>
-							</p>
-						</div>
-
-
-						<div>
-							<p><h3 class="paper-titles"> [FOCI'23]
-								<a href="https://diwenx.com/assets/files/push-foci23.pdf"> The Use of Push Notification in Censorship Circumvention</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/push-foci23-slides.pdf" target="_blank">Slides</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2023PUSH')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2023PUSH" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Xue2023PUSH,
-author = {Diwen Xue and Roya Ensafi},
-title = {{The Use of Push Notification in Censorship Circumvention}},
-booktitle = {Free and Open Communications on the Internet},
-year = {2023},
-address = {Lausanne, Switzerland},
-publisher = {Proceedings on Privacy Enhancing Technologies}
-}	
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;"> and R. Ensafi</small></br>
-							<b><i>In:</i></b> Free and Open Communications on the Internet 2023. </br>
-							</p>
-						</div>
-						
-						<div>
-							<p><h3 class="paper-titles"> [IMC'22]
-								<a href="https://diwenx.com/assets/files/tspu-imc22.pdf"> TSPU: Russia’s Decentralized Censorship System</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/TSPU_IMC-slides.pdf" target="_blank">Slides</a></button> 
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="https://www.youtube.com/watch?v=LWoBhWwAY8A" target="_blank">Video</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2022TSPU')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2022TSPU" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Xue2022TSPU,
-author = {Diwen Xue and Benjamin Mixon-Baca and ValdikSS and Anna Ablove and Beau Kujath and Jedidiah R. Crandall and Roya Ensafi},
-title = {{TSPU: Russia’s Decentralized Censorship System}},
-booktitle = {Proceedings of the 22nd ACM Internet Measurement Conference},
-year = {2022},
-address = {Nice, France},
-publisher = {Association for Computing Machinery}
-}	
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">B.Mixon-Baca, ValdikSS, A. Ablove, B. Kujath, J. Crandall, and R. Ensafi</small></br>
-							<b><i>In:</i></b> Internet Measurement Conference 2022. </br>
-							</p>
-						</div>
-
-
-						<div>
-							<p><h3 class="paper-titles"> [USENIX'22]
-								<a href="https://www.usenix.org/conference/usenixsecurity22/presentation/xue-diwen"> OpenVPN is Open to VPN Fingerprinting</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="https://www.usenix.org/system/files/sec22_slides-xue_diwen.pdf" target="_blank">Slides</a></button> 
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="https://www.youtube.com/watch?v=ZNVff1rH-vA&t=6s" target="_blank">Video</a></button>	
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2022OpenVPN')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2022OpenVPN" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings {Xue2022OpenVPN,
-	author = {Diwen Xue and Reethika Ramesh and Arham Jain and Michalis Kallitsis and J. Alex Halderman and Jedidiah R. Crandall and Roya Ensafi},
-	title = {{OpenVPN} is Open to {VPN} Fingerprinting},
-	booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
-	year = {2022},
-	address = {Boston, MA},
-	publisher = {USENIX Association},
-}
-
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Ramesh, A. Jain, M. Kallitsis, J. Halderman, J. Crandall, and R. Ensafi</small></br>
-							<b><i>In:</i></b> USENIX Security Symposium 2022. </br>
-							<b>Distinguished paper award 🏆</b><br>  
-							<b>First Prize winner of the 2022 USENIX/Meta Internet Defense Prize</a> 🏆</b><br>
-							</p>
-						</div>
-
-
-						<div>
-        					<p></p><h3 class="paper-titles"> [NDSS'22]
-								<a href="https://diwenx.com/assets/files/vpnalyzer-ndss22.pdf">VPNalyzer: Systematic Investigation of the VPN Ecosystem</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/ndss-vpnalyzer-slides.pdf" target="_blank">Slides</a></button> 
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="https://www.youtube.com/watch?v=R_pJMTGN3Kg" target="_blank">Video</a></button>	
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib(&#39;Ramesh2022VPNalyzer&#39;)"><a class="goblue">Bib</a></button> <br>
-<div id="Ramesh2022VPNalyzer" style="display:none">
-<pre style="white-space: pre-wrap">@inproceedings{Ramesh2022VPNalyzer,
-author = {Reethika Ramesh and Leonid Evdokimov and Diwen Xue and Roya Ensafi},
-title = {{VPNalyzer: Systematic Investigation of the VPN Ecosystem}},
-booktitle = {Network and Distributed System Security},
-publisher = {The Internet Society},
-year = {2022},
-url = {https://dx.doi.org/10.14722/ndss.2022.24285}
+@unpublished{DongRRR2025,
+  author  = {Xinhao Dong},
+  title   = {Financial Liberalization and the Effectiveness of Reserve Policy: Evidence from China’s 2015 Deposit Rate Reform},
+  note    = {Working Paper},
+  year    = {2025},
+  url     = {https://XinhaoDong.github.io}
 }
 </pre>
-</div></h3>
-      						<small style="font-size:12pt;">R. Ramesh, L. Evdokimov, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">and R. Ensafi</small><br>
-							  <b><i>In:</i></b> Network and Distributed System Security Symposium 2022. </br>
-        					<p></p>
-    					</div>
+        </div>
+      </article>
 
+      <!-- Works in Progress -->
+      <article class="work-item">
+        <h3>Demographics, Human Capital, and Pension Design in an OLG Economy</h3>
+        <p><b>Work in progress.</b> A demographic OLG model where households choose fertility, education, savings,
+          and elderly labor. I study how taxes and pension schemes shape intergenerational welfare under population
+          aging and human-capital externalities, highlighting distinct long-run effects of fertility subsidies and
+          pension transfers on population dynamics and human-capital accumulation.</p>
+      </article>
 
-						<div>
-							<p><h3 class="paper-titles"> [IMC'21]
-								<a href="https://diwenx.com/assets/files/throttling-imc21.pdf"> Throttling Twitter: An Emerging Censorship Technique in Russia</a>
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="assets/files/Throttling-IMC-slides.pdf" target="_blank">Slides</a></button> 
-<button style="margin-left:10px; background:white; font-size:small"><a class="goblue" href="https://www.youtube.com/watch?v=GenCBx5jWxo" target="_blank">Video</a></button>
-<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2021Throttling')"><a class="goblue">Bib</a></button> </br>
-<div id="Xue2021Throttling" style="display:none">
-<pre style="white-space: pre-wrap">
-@inproceedings{Xue2021Throttling,
-author = author = {Xue Diwen and Ramesh Reethika and ValdikSS and Leonid Evdokimov and Andrey Viktorov and Arham Jain and Eric Wustrow and Simone Basso and Roya Ensafi},
-title = {{Throttling Twitter: An Emerging Censorship Technique in Russia}},
-booktitle = {Proceedings of the 21st ACM Internet Measurement Conference},
-year = {2021},
-address = {Virtual Event},
-publisher = {Association for Computing Machinery}
-}	
-</pre>	
-</h3>
-							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Ramesh, ValdikSS, L. Evdokimov, A. Viktorov, A. Jain, E. Wustrow, S. Basso, and R. Ensafi</small></br>
-							<b><i>In:</i></b> Internet Measurement Conference 2021. </br>
-							<b>Recognized as the Highest Scoring Short Paper at IMC'21 🏆</a></b><br>
-							</p>
-						</div>
+      <article class="work-item">
+        <h3>Fiscal Pressures and Manipulation of Climate Data in China</h3>
+        <p><b>Work in progress.</b> Tests whether local governments strategically under-report extreme temperatures to
+          reduce obligations for heat-related labor compensation. I compare official CMA data to ERA5 reanalysis,
+          detect bunching just below thresholds (35°C, 37°C, 40°C), and link manipulation intensity to local fiscal stress.</p>
+      </article>
 
+      <article class="work-item">
+        <h3>Price Competition with Firm‑Borne Search Costs</h3>
+        <p><b>Theoretical work in progress.</b> Firms jointly choose prices and costly consumer reach. With standard
+          concave cost structures no symmetric equilibrium exists; richer reach-cost formulations restore equilibrium,
+          yielding implications for pricing in markets with search frictions and limited attention.</p>
+      </article>
 
+    </section>
 
-					</section>
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><b>Simon Fraser University</b>, Vancouver, Canada — PhD in Economics <span style="float:right">09/2023 – Present</span></li>
+        <li><b>Simon Fraser University</b>, Vancouver, Canada — MA in Economics <span style="float:right">09/2022 – 08/2023</span></li>
+        <li><b>University of British Columbia</b>, Vancouver, Canada — BA in Mathematics & Economics <span style="float:right">09/2018 – 06/2021</span></li>
+      </ul>
+    </section>
 
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Research Experience</h2>
+      <p><b>Research Assistant</b>, Simon Fraser University <span style="float:right">06/2023 – 01/2024</span><br/>
+      Assisted Prof. Serena Canaan on advisor religion and student outcomes.</p>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+      <p><b>Research Assistant</b>, UBC Vancouver School of Economics <span style="float:right">01/2020 – 09/2020</span><br/>
+      Worked with Prof. Li Hao on “Nash Equilibrium in Penalty Shootouts.”</p>
+    </section>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+    <!-- Teaching -->
+    <section id="teaching">
+      <h2>Teaching Experience (Selected)</h2>
+      <ul>
+        <li>Principles of Microeconomics (Econ 103), multiple terms</li>
+        <li>Intermediate Microeconomics (Econ 201, 302)</li>
+        <li>Graduate Microeconomics and Macroeconomics (Econ 802, 807)</li>
+        <li>Industrial Organization (Econ 325); Public Economics (Econ 392)</li>
+      </ul>
+    </section>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><b>Languages:</b> Mandarin (Native), English (Fluent)</li>
+        <li><b>Software:</b> R, Stata, LaTeX, Python</li>
+      </ul>
+    </section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+  </div>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="mailto:Xinhao_dong@sfu.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="tel:+17788627719" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+        <li><a href="https://github.com/Divix-N" class="icon brands fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>
+        <!-- Optional: add Google Scholar/LinkedIn links below -->
+        <!-- <li><a href="https://scholar.google.com/" class="icon solid fa-graduation-cap" target="_blank" rel="noopener"><span class="label">Scholar</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li> -->
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Xinhao Dong</li>
+        <li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
+      </ul>
+    </div>
+  </footer>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://twitter.com/diwenxue" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="mailto:emmanuelxue@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://scholar.google.com/citations?user=RaFaX88AAAAJ" class="icon solid fa-graduation-cap" target="_blank"><span class="label"></span></a></li>
-						<li>Contact Me: diwenx@umich.edu</li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
