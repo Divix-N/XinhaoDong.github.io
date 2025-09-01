@@ -14,15 +14,28 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://XinhaoDong.github.io" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  
-</head>
+  <!-- Avatar fix: keep image circular without stretching -->
+  <style>
+    #header .image.avatar { width: 240px; height: 240px; }
+    #header .image.avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;         /* crop instead of squish */
+      object-position: 50% 35%;  /* adjust vertical crop; tweak as needed */
+      border-radius: 50%;
+    }
+    @media (min-width: 980px) {
+      #header .image.avatar { width: 260px; height: 260px; }
+    }
+  </style>
+  </head>
 <body class="is-preload">
 
   <!-- Header -->
   <header id="header">
     <div class="inner">
       <!-- TODO: replace with your own headshot file, e.g., images/xinhao.jpg -->
-      <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Portrait of Xinhao Dong" height="240" /></a>
+      <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Portrait of Xinhao Dong" /></a>
       <h1>
         <strong>Xinhao Dong (Jack)</strong><br/>
         Third-year PhD Candidate in Economics<br/>
@@ -38,13 +51,13 @@
     <section id="one">
       <header class="major"><h2>About</h2></header>
       <p>
-      I’m a third-year PhD candidate in Economics at Simon Fraser University. My research sits at the
-      intersection of <b>monetary policy</b> and <b>family economics</b>. On the macro/finance side, I study how
-      deposit-rate liberalization and reserve requirements transmit through banks to households (with a focus on China).
-      On the family side, I use micro data and OLG models to examine fertility, education, and pensions and their
-      feedback to growth and fiscal policy.
+        I am a third-year PhD candidate in Economics at Simon Fraser University. My research studies how
+        monetary policy is transmitted through banking, with a focus on China’s 2015 deposit rate liberalization
+        and the Reserve Requirement Ratio (RRR). I combine econometric evidence (difference-in-differences,
+        event studies, robust placebos) with structural models of deposit pricing and bank competition. I also
+        explore macro-demographic dynamics in overlapping-generations (OLG) frameworks linking fertility,
+        education, and pensions.
       </p>
-
       <!-- Optional: add a compiled CV PDF to assets/files and update the link below -->
       <p>Download my CV <a href="assets/files/CV-XinhaoDong.pdf" target="_blank" rel="noopener">(PDF)</a>.</p>
     </section>
